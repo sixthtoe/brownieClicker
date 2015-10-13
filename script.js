@@ -1,8 +1,10 @@
-var brownies = 0;
-var clickAmount = 1;
+
 
 $(document).ready(function() {
 	$("#brownies").text("Brownies: 0");
+
+var brownies = 0;
+var clickAmount = 1;
 
 	$("#cookie-clicker").click(function(){
 		brownies += clickAmount;
