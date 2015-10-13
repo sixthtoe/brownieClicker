@@ -19,3 +19,22 @@ body{
 	text-align: center;
 	color: white;
 }
+#save-div{
+	text-align: center;
+	color: white;
+}
+#upgraded{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+#divider{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+#winner{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
