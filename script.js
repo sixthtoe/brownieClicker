@@ -138,10 +138,22 @@ var username = "XS Projects";
 		if(uName === username){
 			var uPassword = prompt("Enter Admin Password");
 			if(uPassword === code){
-				var brownieSetter = prompt("How many brownies do you need?");
-				brownies = brownieSetter;
-				$("#brownies").text("Brownies: " + brownies);	
 				tries = 0;
+				var act = prompt("What do you need to do?");
+				var actLow = act.toLowerCase();
+				if(actLow === "set brownies"){
+					var brownieSetter = prompt("How many brownies do you need?");
+					brownies = brownieSetter;
+					$("#brownies").text("Brownies: " + brownies);	
+					tries = 0;
+				}else if(actLow === "set grandma"){
+					var grandmaSetter = prompt("How many grandmas do you want?");
+					grandma = grandmaSetter;
+					clickAmount += (grandma);
+					$("#upgraded").text("Per-Click: " + clickAmount);
+					$("#brownies").text("Brownies: " + brownies);
+					$("#grandma").text(grandma);
+				}
 			}else{
 				alert("Password Incorrect!");
 				tries ++;
