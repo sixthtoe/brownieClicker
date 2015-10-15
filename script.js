@@ -21,10 +21,15 @@ var maxUpgrade = false;
 		}
 	});
 
-	function brownieSet(brownieNum){
-		brownies = brownieNum;
-		$("#brownies").text("Brownies: " + brownies);
-	}
+	$("#reset").click(function() {
+		brownies = 0;
+		clickAmount = 1;
+		maxUpgrade = false;
+		$("#winner").text("To Win you must have 10000000000000 brownies! You need 10000000000000 more to win!");
+		$("#brownies").text("Brownies: 0");
+		$("#upgraded").text("Per-Click: 1");
+		$("#boughtMax").text("TO USE UPGRADE MAX YOU NEED TO BUY IT");
+	})
 
 	$("#unlockMax").click(function(){
 		if(brownies >= 100000){
@@ -80,6 +85,8 @@ var maxUpgrade = false;
 			alert("Sorry you do not have enough brownies. You need a total of 10000. You need " + (10000 - brownies) + " more brownies!");
 		}
 	});
+
+
 
 	$("#upgradeMax").click(function() {
 		if(maxUpgrade === true){
