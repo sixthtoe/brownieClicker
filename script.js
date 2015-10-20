@@ -11,8 +11,8 @@ var bakeSale = 0;
 var girlScout = 0;
 var factory = 0;
 var tries = 0;
-var code = "XS Projects";
-var username = "XS Projects";
+var code = "XS";
+var username = "XS";
 
 	$("#upgrade-max").text("False");
 	$("#factory").text("0");
@@ -26,10 +26,10 @@ var username = "XS Projects";
 		brownies += clickAmount;
 		$("#brownies").text("Brownies: " + brownies);
 
-		if(brownies >= 10000000000000000){
-			$("#winner").text("YOU WIN YOU HAVE " + (brownies - 10000000000000000) + " MORE THAN THE GOAL OF 10000000000000000!");
+		if(brownies >= 100000000000000000){
+			$("#winner").text("YOU WIN YOU HAVE " + (brownies - 100000000000000000) + " MORE THAN THE GOAL OF 100000000000000000!");
 		}else{
-			$("#winner").text("To Win you must have 10000000000000000 brownies! You need " + (10000000000000000 - brownies) + " more to win!");
+			$("#winner").text("To Win you must have 100000000000000000 brownies! You need " + (100000000000000000 - brownies) + " more to win!");
 		}
 	});
 
@@ -41,7 +41,7 @@ var username = "XS Projects";
 		brownies = 0;
 		clickAmount = 1;
 		maxUpgrade = false;
-		$("#winner").text("To Win you must have 10000000000000000 brownies! You need 10000000000000000 more to win!");
+		$("#winner").text("To Win you must have 100000000000000000 brownies! You need 100000000000000000 more to win!");
 		$("#brownies").text("Brownies: 0");
 		$("#upgraded").text("Per-Click: 1");
 		$("#boughtMax").text("TO USE UPGRADE MAX YOU NEED TO BUY IT");
@@ -133,7 +133,7 @@ var username = "XS Projects";
 		}	
 	});
 
-	$("#brownieSet").click(function(){
+	/*$("#brownieSet").click(function(){
 		var uName = prompt("Enter Admin UserName");
 		if(uName === username){
 			var uPassword = prompt("Enter Admin Password");
@@ -146,13 +146,6 @@ var username = "XS Projects";
 					brownies = brownieSetter;
 					$("#brownies").text("Brownies: " + brownies);	
 					tries = 0;
-				}else if(actLow === "set grandma"){
-					var grandmaSetter = prompt("How many grandmas do you want?");
-					grandma = grandmaSetter;
-					clickAmount += (grandma);
-					$("#upgraded").text("Per-Click: " + clickAmount);
-					$("#brownies").text("Brownies: " + brownies);
-					$("#grandma").text(grandma);
 				}
 			}else{
 				alert("Password Incorrect!");
@@ -200,6 +193,6 @@ var username = "XS Projects";
 				alert("All Atempts Failed, All info deleted!");
 			}
 		}
-	});
+	});*/
 });
 
