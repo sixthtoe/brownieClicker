@@ -10,12 +10,14 @@ var grandma = 0;
 var bakeSale = 0;
 var girlScout = 0;
 var factory = 0;
+var farm = 0;
 var tries = 0;
 var code = "XS";
 var username = "XS";
 
 	$("#upgrade-max").text("False");
 	$("#factory").text("0");
+	$("#farm").text("0");
 	$("#girl-scout").text("0");
 	$("#bake-sale").text("0");
 	$("#grandma").text("0");
@@ -46,6 +48,7 @@ var username = "XS";
 		$("#upgraded").text("Per-Click: 1");
 		$("#boughtMax").text("TO USE UPGRADE MAX YOU NEED TO BUY IT");
 		$("#factory").text("0");
+		$("#farm").text("0");
 		$("#girl-scout").text("0");
 		$("#bake-sale").text("0");
 		$("#grandma").text("0");
@@ -112,6 +115,19 @@ var username = "XS";
 			$("#factory").text(factory);
 		}else{
 			alert("Sorry you do not have enough brownies. You need a total of 10000. You need " + (10000 - brownies) + " more brownies!");
+		}
+	});
+
+	$("#upgrade10000").click(function() {
+		if(brownies >= 100000){
+			farm += 1;
+			clickAmount += 10000;
+			brownies -= 100000;
+			$("#upgraded").text("Per-Click: " + clickAmount);
+			$("#brownies").text("Brownies: " + brownies);
+			$("#farm").text(factory);
+		}else{
+			alert("Sorry you do not have enough brownies. You need a total of 100000. You need " + (100000 - brownies) + " more brownies!");
 		}
 	});
 
