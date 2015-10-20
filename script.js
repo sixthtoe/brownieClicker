@@ -19,17 +19,17 @@ var username = "XS";
 	$("#girl-scout").text("0");
 	$("#bake-sale").text("0");
 	$("#grandma").text("0");
-	$("#winner").text("To Win you must have 10000000000000000 brownies! You need 10000000000000000 more to win!");
+	$("#winner").text("To Win you must have 100000000000000000 brownies! You need 100000000000000000 more to win!");
 	$("#upgraded").text("Per-Click: 1");
 	$("#boughtMax").text("TO USE UPGRADE MAX YOU NEED TO BUY IT");
 	$("#cookie-clicker").click(function(){
 		brownies += clickAmount;
 		$("#brownies").text("Brownies: " + brownies);
 
-		if(brownies >= 100000000000000000){
-			$("#winner").text("YOU WIN YOU HAVE " + (brownies - 100000000000000000) + " MORE THAN THE GOAL OF 100000000000000000!");
+		if(brownies >= 1000000000000000000){
+			$("#winner").text("YOU WIN YOU HAVE " + (brownies - 1000000000000000000) + " MORE THAN THE GOAL OF 1000000000000000000!");
 		}else{
-			$("#winner").text("To Win you must have 100000000000000000 brownies! You need " + (100000000000000000 - brownies) + " more to win!");
+			$("#winner").text("To Win you must have 1000000000000000000 brownies! You need " + (1000000000000000000 - brownies) + " more to win!");
 		}
 	});
 
@@ -41,7 +41,7 @@ var username = "XS";
 		brownies = 0;
 		clickAmount = 1;
 		maxUpgrade = false;
-		$("#winner").text("To Win you must have 100000000000000000 brownies! You need 100000000000000000 more to win!");
+		$("#winner").text("To Win you must have 1000000000000000000 brownies! You need 1000000000000000000 more to win!");
 		$("#brownies").text("Brownies: 0");
 		$("#upgraded").text("Per-Click: 1");
 		$("#boughtMax").text("TO USE UPGRADE MAX YOU NEED TO BUY IT");
@@ -59,7 +59,7 @@ var username = "XS";
 			$("#boughtMax").text("MAX UPGRADE HAS BEEN BOUGHT");
 			$("#upgrade-max").text("True");
 		}else{
-			alert("You can not afford to buy the Max Upgrade! You need " + (100000 - brownies) + " more brownies");
+			alert("You can not afford to buy the Max Upgrade! You need " + (100000 - brownies) + " More Brownies");
 		}
 	});
 
