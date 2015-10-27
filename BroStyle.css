@@ -1,5 +1,5 @@
 body{
-	background-color: #6c0031;
+	background-color: #CC5E14;
 }
 #container {
 	text-align: center;
@@ -39,11 +39,16 @@ body{
 	font-size: 20px;
 }
 #reset-lotto-brownieSet{
+<<<<<<< HEAD:BroStyle.css
 	color: black;
+=======
+	color: white;
+>>>>>>> origin/master:style.css
 }
 #thanks{
 	color: white;
 	text-align: center;
+<<<<<<< HEAD:BroStyle.css
 }
 #btnXI{
 	color: white;
@@ -56,4 +61,6 @@ body{
 }
 #btnBD{
 	color: white;
+=======
+>>>>>>> origin/master:style.css
 }
