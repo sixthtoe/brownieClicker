@@ -1,0 +1,30 @@
+body{
+	background-color: #8bafee;
+}
+h1 {
+	text-align: center;
+}
+.jumbotron{
+	background-color: green;
+}
+.container{
+	font-size: 20px;
+}
+#green{
+	color: green;
+}
+#h3swag{
+	color: white;
+}
+#btnXI{
+	color: white;
+}
+#btnGL{
+	color: white;
+}
+#btnSI{
+	color: white;
+}
+#btnBD{
+	color: white;
+}

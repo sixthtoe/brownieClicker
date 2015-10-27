@@ -26,7 +26,7 @@ body{
 #upgraded{
 	text-align: center;
 	color: white;
-	font-size: 30px;
+	font-size: 20px;
 }
 #divider{
 	text-align: center;
@@ -37,4 +37,23 @@ body{
 	text-align: center;
 	color: white;
 	font-size: 20px;
+}
+#reset-lotto-brownieSet{
+	color: black;
+}
+#thanks{
+	color: white;
+	text-align: center;
+}
+#btnXI{
+	color: white;
+}
+#btnGL{
+	color: white;
+}
+#btnSI{
+	color: white;
+}
+#btnBD{
+	color: white;
 }

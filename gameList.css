@@ -1,0 +1,24 @@
+body{
+	background-color: #8bafee;
+}
+.jumbotron{
+	background-color: green;
+}
+.col-sm-4{
+	font-size: 20px;
+}
+#btnRT{
+	text-align: center;
+}
+#btnXI{
+	color: white;
+}
+#btnGL{
+	color: white;
+}
+#btnSI{
+	color: white;
+}
+#btnBD{
+	color: white;
+}
